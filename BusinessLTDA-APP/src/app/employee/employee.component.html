@@ -69,11 +69,11 @@
         <div class="d-flex flex-row bd-highlight mb-3">
           <div class="p-2 w-50 bd-highlight">
             <div class="input-group mb-3">
-              <span class="input-group-text">Name</span>
+              <span class="input-group-text">Nome</span>
               <input type="text" class="form-control" [(ngModel)]="EmployeeName">
             </div>
             <div class="input-group mb-3">
-              <span class="input-group-text">Department</span>
+              <span class="input-group-text">Departamento</span>
               <select class="form-select" [(ngModel)]="Department">
                 <option *ngFor="let dep of departments">
                   {{dep.DepartmentName}}
@@ -81,21 +81,21 @@
               </select>
             </div>
             <div class="input-group mb-3">
-              <span class="input-group-text">DOJ</span>
+              <span class="input-group-text">Data de contratação</span>
               <input type="date" class="form-control" [(ngModel)]="DateOfJoining">
             </div>
           </div>
           <div class="p-2 w-50 bd-highlight">
             <img width="250px" height="250px" [src]="PhotoPath+PhotoFileName" />
-            <input class="m-2" type="file" (change)="imageUpload($event)">
+            <input class="m-2" type="file" (change)="imageUpload($event)" placeholder="Foto">
           </div>
         </div>
         <button type="button" (click)="createClick()" *ngIf="EmployeeId==0" class="btn btn-primary">
-          Create
+          Criar
         </button>
 
         <button type="button" (click)="updateClick()" *ngIf="EmployeeId!=0" class="btn btn-primary">
-          Update
+          Editar
         </button>
 
       </div>
