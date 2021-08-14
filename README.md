@@ -22,3 +22,5 @@ In this course, you will learn how to develop a web application from scratch usi
 - .NET Core Web API and SQL Server Backend
 - Angular 12 Frontend
 - Build RESTful APIs
+
+### https://www.udemy.com/course/angular-12-net-core-web-api-microsoft-sql-full-stack-app/
